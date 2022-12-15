@@ -1,0 +1,18 @@
+section {
+  padding: 20px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.gallery {
+  max-width: 400px;
+}
+.title {
+  max-width: 347px;
+  margin-bottom: 16px;
+}
+.text {
+  margin-top: 0px;
+  max-width: 320px;
+}

@@ -1,0 +1,11 @@
+.Navbox {
+  height: 70px;
+  background: #ffff;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.Navbox > img {
+  height: 25px;
+  width: 82px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
