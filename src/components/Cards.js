@@ -3,37 +3,38 @@ import bike from "../images/mountain-bike.png";
 import wedding from "../images/wedding-photography.png";
 import rating from "../images/star.png";
 import styles from "../styles/Cards.module.css";
+import Card from "./Card";
 
 const Cards = () => {
   return (
     <div className={styles.Cards}>
-      <section>
-        <img className={styles.image} src={katie} />
-        <div className={styles.rating}>
-          <img src={rating} />
-          <p>5.0(6) USA</p>
-        </div>
-        <p>Life lessons from katie zaferes</p>
-        <p>From $126/person</p>
-      </section>
-      <section>
-        <img className={styles.image} src={bike} />
-        <div className={styles.rating}>
-          <img src={rating} />
-          <p>5.0(6) USA</p>
-        </div>
-        <p>Life lessons from katie zaferes</p>
-        <p>From $126/person</p>
-      </section>
-      <section>
-        <img className={styles.image} src={wedding} />
-        <div className={styles.rating}>
-          <img src={rating} />
-          <p>5.0(6) USA</p>
-        </div>
-        <p>Life lessons from katie zaferes</p>
-        <p>From $126/person</p>
-      </section>
+      <Card
+        img={katie}
+        rating={rating}
+        span1="5.0"
+        span2="(6)"
+        span3="USA"
+        p1="Life lessons from katie zaferes"
+        p2="From $126/person"
+      />
+      <Card
+        img={wedding}
+        rating={rating}
+        span1="5.0"
+        span2="(8)"
+        span3="USA"
+        p1="Learn wedding photography"
+        p2="From $156/person"
+      />
+      <Card
+        img={bike}
+        rating={rating}
+        span1="4.5"
+        span2="(6)"
+        span3="USA"
+        p1="Group mountainer biking"
+        p2="From $169/person"
+      />
     </div>
   );
 };
