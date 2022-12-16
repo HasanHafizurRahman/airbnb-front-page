@@ -1,0 +1,16 @@
+.Cards {
+  display: flex;
+}
+.image {
+  height: 235px;
+  width: 176px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  max-height: 58px;
+}
+.rating > img {
+  height: 14px;
+  width: 14px;
+}

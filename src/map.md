@@ -6,3 +6,7 @@ b) logo -->
 
 <!-- 2/ Hero Photo Grid :
 a) import image  -->
+
+<!-- # there will be three cards having image, title, text
+
+<section><img/><img src="star-icon"/><p/></section> -->
