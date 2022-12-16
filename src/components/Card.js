@@ -4,19 +4,19 @@
 // import rating from "../images/star.png";
 import styles from "../styles/Cards.module.css";
 
-const Card = (props) => {
+const Card = ({ img, span1, span2, span3, rating, p1, p2 }) => {
   return (
     <div>
       <section>
-        <img className={styles.image} src={props.img} alt="katie" />
+        <img className={styles.image} src={img} alt="katie" />
         <div className={styles.rating}>
-          <img src={props.rating} alt="start icon" />
-          <span>{props.span1}</span>
-          <span className={styles.span}>{props.span2}</span>
-          <span className={styles.span}>{props.span3}</span>
+          <img src={rating} alt="start icon" />
+          <span>{span1}</span>
+          <span className={styles.span}>{span2}</span>
+          <span className={styles.span}>{span3}</span>
         </div>
-        <p>{props.p1}</p>
-        <p>{props.p2}</p>
+        <p>{p1}</p>
+        <p>{p2}</p>
       </section>
     </div>
   );
