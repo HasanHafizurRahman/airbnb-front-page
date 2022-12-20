@@ -1,4 +1,4 @@
-import hero from "../images/photo-grid.png";
+import hero from "./photo-grid.png";
 import styles from "../styles/Hero.module.css";
 const Hero = () => {
   return (
