@@ -41,46 +41,8 @@ const Cards = () => {
   return (
     <div className={styles.Cards}>
       {cards.map((card) => {
-        return (
-          <Card
-            img={card.img}
-            rating={card.rating}
-            review={card.review}
-            reviewNum={card.reviewNum}
-            location={card.location}
-            title={card.title}
-            description={card.description}
-            openspot={card.openspot}
-          />
-        );
+        return <Card card={card} />;
       })}
-      {/* <Card
-        img={katie}
-        rating={rating}
-        span1={6.5}
-        span2="(6)"
-        span3="USA"
-        p1="Life lessons from katie zaferes"
-        p2="From $126/person"
-      />
-      <Card
-        img={wedding}
-        rating={rating}
-        span1={5.5}
-        span2="(8)"
-        span3="USA"
-        p1="Learn wedding photography"
-        p2="From $156/person"
-      />
-      <Card
-        img={bike}
-        rating={rating}
-        span1={4.5}
-        span2="(6)"
-        span3="USA"
-        p1="Group mountainer biking"
-        p2="From $169/person"
-      /> */}
     </div>
   );
 };

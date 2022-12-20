@@ -4,31 +4,22 @@
 // import rating from "../images/star.png";
 import styles from "../styles/Cards.module.css";
 
-const Card = ({
-  img,
-  review,
-  reviewNum,
-  location,
-  rating,
-  title,
-  description,
-  openspot,
-}) => {
+const Card = ({ card }) => {
   return (
     <div>
       <section>
         <div className={styles.card_badge}>
-          {openspot === 0 ? "Sold Out" : "online"}
+          {card.openspot === 0 ? "Sold Out" : "online"}
         </div>
-        <img className={styles.image} src={img} alt="katie" />
+        <img className={styles.image} src={card.img} alt="katie" />
         <div className={styles.rating}>
-          <img src={rating} alt="start icon" />
-          <span>{review}</span>
-          <span className={styles.span}>{reviewNum}</span>
-          <span className={styles.span}>{location}</span>
+          <img src={card.rating} alt="start icon" />
+          <span>{card.review}</span>
+          <span className={styles.span}>{card.reviewNum}</span>
+          <span className={styles.span}>{card.location}</span>
         </div>
-        <p>{title}</p>
-        <p>{description}</p>
+        <p>{card.title}</p>
+        <p>{card.description}</p>
       </section>
     </div>
   );
