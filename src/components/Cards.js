@@ -10,29 +10,32 @@ const Cards = () => {
     {
       img: "../../images/katie-zaferes.png",
       rating: "../../images/star.png",
-      span1: "6.5",
-      span2: "(5)",
-      span3: "USA",
-      p1: "Life lessons from katie zaferes",
-      p2: "From $126/person",
+      review: "6.5",
+      reviewNum: "(5)",
+      location: "USA",
+      title: "Life lessons from katie zaferes",
+      description: "From $126/person",
+      openspot: 0,
     },
     {
       img: "../../images/mountain-bike.png",
       rating: "../../images/star.png",
-      span1: "6.5",
-      span2: "(5)",
-      span3: "USA",
-      p1: "Group mountainer biking",
-      p2: "From $126/person",
+      review: "6.5",
+      reviewNum: "(5)",
+      location: "USA",
+      title: "Group mountainer biking",
+      description: "From $126/person",
+      openspot: 0,
     },
     {
       img: "../../images/wedding-photography.png",
       rating: "../../images/star.png",
-      span1: "6.5",
-      span2: "(5)",
-      span3: "USA",
-      p1: "Learn wedding photography",
-      p2: "From $126/person",
+      review: "6.5",
+      reviewNum: "(5)",
+      location: "USA",
+      title: "Learn wedding photography",
+      description: "From $126/person",
+      openspot: 4,
     },
   ];
   return (
@@ -42,11 +45,12 @@ const Cards = () => {
           <Card
             img={card.img}
             rating={card.rating}
-            span1={card.span1}
-            span2={card.span2}
-            span3={card.span3}
-            p1={card.p1}
-            p2={card.p2}
+            review={card.review}
+            reviewNum={card.reviewNum}
+            location={card.location}
+            title={card.title}
+            description={card.description}
+            openspot={card.openspot}
           />
         );
       })}
